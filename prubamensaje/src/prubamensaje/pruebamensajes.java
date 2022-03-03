@@ -113,17 +113,17 @@ public class pruebamensajes extends javax.swing.JFrame {
         int n=Integer.parseInt(JOptionPane.showInputDialog("cuantos numeros se almacenan?"));
         double[]numeros = new double[n];
         
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numeros.length; i++) {
             numeros[i]=Integer.parseInt(JOptionPane.showInputDialog("numeo"+i));   
         }
         double sum=0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numeros.length; i++) {
             sum+=numeros[i];   
         }
         double avg=sum/n;
         double suma=0;
         
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numeros.length; i++) {
             suma+=Math.pow(numeros[i]-avg,2);
             
         }
@@ -145,7 +145,7 @@ public class pruebamensajes extends javax.swing.JFrame {
             nd+=Math.pow(2,nb.length()-i-i)*db;
             
         }
-        
+        JOptionPane.showMessageDialog(this, nb+"\n"+nd);
         
         
         
